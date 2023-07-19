@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+
+
+# defining a funcition
+def convert_gb_to_mb(gb):
+    mb = gb * 1024
+    return mb 
+
+if __name__ == "__main__":
+    try:
+        # User input for gigabytes
+        gig = float(input("Enter the number of gigabytes: "))
+        meg = convert_gb_to_mb(gig)
+ # Then print the output 
+        print(f"{gig} GB is equal to {meg}MB.")
+
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+
